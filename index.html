@@ -3,44 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramya Website</title>
-   <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Portfolio</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+             box-sizing: border-box;
+        }
+      body{
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-weight: bold;
+         background-image: url("/assets/keybo.jpeg");
+         background-size: cover;
+         background-repeat: no-repeat;
+         height: 500px;
+         text-align: center;
+      }  
+      
+    h1{
+        color:rgb(30, 4, 4);
+        font-weight: bold;   
+        font-size: 65px;
+        margin-top: 30px;
+        
+    }
+   
+    .container h3{
+        font-size: 35px;
+        color:rgb(177, 30, 30);
+         margin-top: 20px;
+       transition:transform 0.8s;
+    }
+     h3:hover{
+        transform:scaleX(0.5);
+    }
+    .container .rbutton{
+        width:300px;
+        height:55px;
+        color:rgb(56, 214, 114);
+        font-size: 25px;
+        border: 0.5px gray;
+        font-weight: bold; 
+        border-radius: 20px; 
+        transition: background-color 0.9s;
+        margin-top: 10px;
+    }
+    .container .rbutton:hover{
+        cursor:pointer;
+        background-color: lightblue;
+    }
+    .navdiv{
+       padding:15px; 
+        background-color: aliceblue;
+        width:500px;
+        height:30px;
+        font-size: 15px;
+        text-align: center;
+        margin:auto;
+    }
+    .navdiv a{
+        text-decoration: none;  
+        color:rgb(3, 109, 74);
+        padding:5px;   
+         
+    }
+    .navdiv a:hover{
+        text-decoration:underline;
+        color:cornflowerblue;
+    }
+    .resume {
+        text-decoration: none;
+    }
+    .resume:hover{
+        text-decoration: underline;
+    }
+   
+    
+.navbar {
+     width:50%;
+    margin:auto;
+  background-color: #d46e6e;
+  color: white;
+  padding: 10px 20px;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+ 
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+     body{
+            background-image: none;
+        }
+        h1{
+            font-size: 40px;
+        }
+       .container h3{
+            font-size: 25px;
+        }
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color: #333;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 15px 10px;
+    border-top: 1px solid #444;
+  }
+}
+    </style>
 </head>
 <body>
-
-    <div class="headerdiv">
-        <header>
-        <h1>Ramya</h1>  
-            
-        <nav>
-            <a href="resume.html">About Me</a>
-            <a href="x.html">Projects</a>
-            <a href="">Contact</a>
-        </nav> 
-         </header>     
+    <div class="container">       
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <div class="nav-links">
+                <a href="/about.html#about">About</a>
+                <a href="/about.html#education">Education</a>
+                <a href="/about.html#experience">Experience</a>
+                <a href="/about.html#projects">Projects</a>
+                <a href="/about.html#skills">Skills</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+        <h1>Ramya Kamalasekaran</h1>
+        <h3>Java full stack developer</h3><br>
+        <a class="resume" href="/resume.html">View Resume</a>
+        <button class="rbutton">Download Resume</button>
+    
     </div>
-    <div class="about_Me">
-        <h2>About Me</h2>
-        <p>I am a full stack java web developer. I know HTML, CSS, JavaScript,React in Front End and Core Java, Spring Boot in Technologies and MySql, Postgres in Database. </p>
-    </div>
-    <div class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li> Clone x.com</li>
-            <p>Cloned x.com website works responsively for large screens and small screens.</p>
-            <li> Build resume </li>
-            <p>Created resume using html and css.</p>
-        </ul>
-    </div>
-        <div class="contact">
-            <h2>Contact</h2>
-            <p>Email:ramyakpass@gmail.com </p>
-            <p><a href="mailto:ramyakpass@gmail.com">Send email</a></p>
-        </div>
-    <div class="footer">
-        <footer>© 2025 Ramya</footer>
-
-    </div>
+   
 </body>
 </html>
