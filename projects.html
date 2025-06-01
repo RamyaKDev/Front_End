@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .container{
+            /* border: 1px solid green; */
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card{
+            /* border: 1px solid; */
+            max-height:500px;
+            transition: transform 0.3s;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .card:hover{
+           transform: translate(-5px);
+        }
+
+       
+
+        .card-details{
+            padding: 15px;
+           text-align: center;
+        }
+        .card-details a{
+            text-decoration: none;
+            color:cornflowerblue;
+        }
+        .card-details a:hover{
+            text-decoration: underline;
+            color:blueviolet;
+        }
+        h2{
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        p{
+            font-size: 0.9rem;
+            color: gray;
+            margin-top: 10px;
+        }
+
+        button{
+            margin-top: 10px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+        }
+
+        img{
+            /* border: 1px solid blue; */
+            width: 100%;
+            height: 200px;
+            transition: transform 0.5s;
+            object-fit: cover;
+        }
+
+        .card:hover img{
+            transform: scale(0.95);
+        }
+        button:hover{
+            background-color: #089629;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>My Projects</h1>
+
+
+    <div class="container">
+
+        <div class="card">
+            <img src="/assets/x.com.jpg" alt="x.com">
+            <div class="card-details">
+                <h2> X.html</h2>
+                <p>Cloned x.html as it is and made website as responsive for small screens </p>
+                <h2>HTML CSS</h2>
+                <a href="https://github.com/RamyaKDev/x.com">Visit Site-></a>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="" alt="">
+            <div class="card-details">
+                <h2>Wireless Headphones</h2>
+                <p>Immersive sound and comfort.</p>
+                <h2>₹2,499</h2>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="" alt="">
+            <div class="card-details">
+                <h2>Wireless Headphones</h2>
+                <p>Immersive sound and comfort.</p>
+                <h2>₹2,499</h2>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="" alt="">
+            <div class="card-details">
+                <h2>Wireless Headphones</h2>
+                <p>Immersive sound and comfort.</p>
+                <h2>₹2,499</h2>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+
+        
+
+
+       
+
+
+       
+
+
+        
+    </div>
+
+
+
+
+
+</body>
+
+</html>
