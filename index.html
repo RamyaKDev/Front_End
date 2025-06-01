@@ -8,23 +8,28 @@
         *{
             padding:0px;
             margin:0px;
-             box-sizing: border-box;
+            box-sizing: border-box;
         }
       body{
          font-family: Verdana, Geneva, Tahoma, sans-serif;
          font-weight: bold;
-         background-image: url("/assets/keybo.jpeg");
+         /* background-image: url("/assets/keybo.jpeg");
          background-size: cover;
-         background-repeat: no-repeat;
+         background-repeat: no-repeat; */
+         background-image: linear-gradient(to left ,pink, rgb(212, 212, 94) );
          height: 500px;
          text-align: center;
       }  
+      /* .name{
+    display:flex;
+    justify-content: center;
+    align-items: center; */
       
     h1{
         color:rgb(30, 4, 4);
         font-weight: bold;   
         font-size: 65px;
-        margin-top: 30px;
+        margin-top: 250px;
         
     }
    
@@ -121,10 +126,11 @@
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-     body{
+     /* body{
             background-image: none;
-        }
+        } */
         h1{
+          margin-top: 50px;
             font-size: 40px;
         }
        .container h3{
@@ -149,6 +155,7 @@
     padding: 15px 10px;
     border-top: 1px solid #444;
   }
+  
 }
     </style>
 </head>
@@ -166,11 +173,12 @@
                 <a href="">Contact</a>
             </div>
         </nav>
-        <h1>Ramya Kamalasekaran</h1>
-        <h3>Java full stack developer</h3><br>
-        <a class="resume" href="/resume.html">View Resume</a>
-        <button class="rbutton">Download Resume</button>
-    
+        <div class="name">
+          <h1>Ramya Kamalasekaran</h1>
+          <h3>Java full stack developer</h3><br>
+          <a class="resume" href="/resume.html">View Resume</a><br>
+          <button class="rbutton">Download Resume</button>
+        </div>
     </div>
    
 </body>
