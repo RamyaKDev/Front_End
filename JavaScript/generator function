@@ -1,0 +1,12 @@
+//generator function
+function* fun(){
+    yield "fun1"
+    yield "fun2"
+    yield "fun3"
+    return "generate"
+}
+let iterate=fun();
+console.log(iterate.next().value);
+console.log(iterate.next().value);
+console.log(iterate.next());
+console.log(iterate.next());
